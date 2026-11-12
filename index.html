@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="レトロ・クライマー">
+  <meta name="theme-color" content="#2b2b36">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>レトロ・クライマー</title>
+</head>
+<body>
+  <div id="app">
+    <div id="screen">
+      <div id="game"></div>
+      <div id="hud" hidden>
+        <span class="hearts"></span>
+        <span class="gems"></span>
+        <span class="stage-name"></span>
+        <button id="pause" type="button" aria-label="ひとやすみ">Ⅱ</button>
+      </div>
+      <div id="toast" hidden></div>
+      <div id="overlay" hidden></div>
+    </div>
+    <div id="pad">
+      <div class="dpad">
+        <button type="button" class="btn up" data-key="up" aria-label="上">▲</button>
+        <button type="button" class="btn left" data-key="left" aria-label="左">◀</button>
+        <button type="button" class="btn right" data-key="right" aria-label="右">▶</button>
+        <button type="button" class="btn down" data-key="down" aria-label="下">▼</button>
+      </div>
+      <button type="button" class="btn jump" data-key="jump" aria-label="ジャンプ">ジャンプ</button>
+    </div>
+  </div>
+  <div id="rotate"><p>iPhone を縦に持ってね</p></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
