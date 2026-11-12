@@ -75,7 +75,7 @@ npm test        # テスト
 npm run build   # 公開用に組み立てる（dist/ にできる）
 ```
 
-`main` に push すると、GitHub Actions がテストとビルドを行い、GitHub Pages に公開する（`.github/workflows/deploy.yml`）。
+公開は、`npm run build` でできた `dist/` の中身を `gh-pages` ブランチに置き、GitHub Pages で配信している。
 
 ## Claude Code での開発
 
